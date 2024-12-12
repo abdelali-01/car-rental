@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAR RENTAL</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/87290dec6d.js" crossorigin="anonymous"></script>
+</head>
+<body >
+    <header>
+        <div class="logo">
+            <a onclick="closeIn() ; closeUp()" href="#home"><img src="car_3774278.png" alt="logo"></a>
+        </div>
+        <div onclick="closeIn() ; closeUp()" class="menu-icon" id="menu"><i class="fa-solid  fa-bars  m"></i></div>
+        <div class="nav-bar hide-bar">
+            <a onclick="hideNavBar(); rentgo()" href="#home">home</a>
+            <a onclick="hideNavBar(); rentgo()" href="#ride">ride</a>
+            <a onclick="hideNavBar(); rentgo()" href="#services">services</a>
+            <a onclick="hideNavBar(); rentgo()" href="#about">about</a>
+            <a onclick="hideNavBar(); rentgo()" href="#reviews">reviews</a>
+        </div>
+        <div class="sign">
+            <button class="sign-up btn">sign up</button>
+            <button class="sign-in btn">sign in</button>
+        </div>
+    </header>
+    <div class="background">
+        <div class="signin-form first-form">
+            <form action="#">
+                <i onclick="closeIn()" class="fa-regular fa-circle-xmark"></i>
+                <h3>Sign In</h3>
+                <div class="form-content">
+                    <div class="input-box">
+                        <input type="email" id="email-in" placeholder="Enter Your Emai .. " >
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" id="psw" placeholder="Enter Your Password" minlength="8" maxlength="16" >
+                        <i class="fa-solid fa-lock"></i>
+                        <i class="fa-solid  fa-eye-slash  eye"></i>
+                    </div>
+                    <div class="sub">
+                        <div class="check">
+                            <input type="checkbox" id="check" class="checking">
+                            <label for="check">Remember Me</label>
+                        </div>
+                        <a href="">Forgot your password ?</a>
+                    </div>
+                    <button onclick="clickedin()" id="signin-btn">Sign In</button>
+                    <a  id="crt">Create acount</a>
+                    <div class="another-method">
+                        <p>Or</p>
+                        <a href="" class="google"><img src="google_2702602.png" width="30"> <p>Continue with Google</p></a>
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="background two">
+        <div class="signin-form signup-form">
+            <form action="#">
+                <i onclick="closeUp()" class="fa-regular fa-circle-xmark"></i>
+                <h3>Sign Up</h3>
+                <p class="attention">You Must To Fill This Form !!</p>
+                <div class="input-boxes">
+                    <div class="input-box">
+                        <input onkeyup="key()" type="text" id="user"  placeholder="choose a username" >
+                    </div>
+                    <div class="input-box">
+                        <input type="email" id="email-up" placeholder="Enter Your Emai .. ">
+                    </div>
+                    <div class="input-box">
+                        <input type="password" id="psw-up" placeholder="Enter Your Password" minlength="8" maxlength="16">
+                    </div>
+                    <div class="input-box">
+                        <input onclick="pswkey()" type="password" id="conf-psw" placeholder="Confirm Your Password">
+                    </div>
+                    <div class="sub subup">
+                        <div class="check">
+                            <input type="checkbox" id="check-terms" class="checking">
+                            <label for="check-terms">I agree to the <a href="">terms of service</a> and <a href="">privacy policy</a>.</label>
+                        </div>
+                        <div class="check">
+                            <input type="checkbox" id="check-send" class="checking">
+                            <label for="check-send">Send me promotions and announcements via email</label>
+                        </div>
+                    </div>
+                </div>
+                <button onclick="clickedup()" id="signup-btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <section class="home" id="home">
+        <div class="text">
+            <h3><span class="looking">Looking</span> to<br> rent a car</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eligendi sint earum.</p>
+            <div class="app">
+                <a href=""><img src="appstore.png" ></a>
+                <a href=""><img src="googleplay.png" ></a>
+            </div>
+        </div>
+        <div class="form">
+            <div class="input">
+                <label for="location">location</label>
+                <input type="text" id="location" placeholder="Search places">
+            </div>
+            <div class="input">
+                <label for="pick-up">pick-up date</label>
+                <input class="dateinput" type="date" id="pick-up">
+            </div>
+            <div class="input">
+                <label for="return">return date</label>
+                <input class="dateinput" type="date" id="return">
+            </div>
+            <button type="submit">Search</button>
+        </div>
+    </section>
+    <section class="ride" id="ride">
+        <div class="heading">
+            <span>how its work</span>
+            <h3>Rent with 3 easy steps </h3>
+        </div>
+        <div class="ride-content">
+            <div class="box">
+                <i class="fa-solid fa-location-dot bx"></i>
+                <h4>Choose A Location</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum maxime enim perspiciatis quidem et nulla?</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-calendar-check bx"></i>
+                <h4>Pick Up Date</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum maxime enim perspiciatis quidem et nulla?</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-calendar-minus bx"></i>
+                <h4>Book A Car</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum maxime enim perspiciatis quidem et nulla?</p>
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="heading">
+            <span>Best Services</span>
+            <h3>Explore Out Top Deals <br> From Top Rated Dealers</h3>
+        </div>
+        <div class="box-car">
+            <div class="card">
+                <div class="car-img">
+                    <img id="mazda" src="mazda.jpg" >
+                </div>
+                <p class="year">2018</p>
+                <h2 class="carName" id="mazdaname">Mazda Signature</h2>
+                <p class="prix">3400000DA | 4600DA/Day</p>
+                <button onclick="rentEnter(mazda.src , mazdaname.innerHTML)" class="rentNow">Rent Now</button>
+            </div>
+            <div class="card">
+                <div class="car-img">
+                    <img id="tucson" src="hyundai.jpg" alt="">
+                </div>
+                <p class="year">2018</p>
+                <h2 class="carName" id="tucsonname">Hyundai Tucson</h2>
+                <p class="prix">3400000DA | 4600DA/Day</p>
+                <button onclick="rentEnter(tucson.src , tucsonname.innerHTML)" class="rentNow">Rent Now</button>
+            </div>
+            <div class="card">
+                <div class="car-img">
+                    <img id="macan" src="macan.jpg" alt="">
+                </div>
+                <p class="year">2019</p>
+                <h2 class="carName" id="macanname">Porshe Macan</h2>
+                <p class="prix">3400000DA | 4600DA/Day</p>
+                <button onclick="rentEnter(macan.src , macanname.innerHTML)" class="rentNow">Rent Now</button>
+            </div>
+            <div class="card">
+                <div class="car-img">
+                    <img id="gle" src="gle.jpg" alt="">
+                </div>
+                <p class="year">2022</p>
+                <h2 class="carName" id="glename">Mercedes GLE53</h2>
+                <p class="prix">3400000DA | 4600DA/Day</p>
+                <button onclick="rentEnter(gle.src , glename.innerHTML)" class="rentNow">Rent Now</button>
+            </div>
+            <div class="card">
+                <div class="car-img">
+                    <img id="range" src="rangerover.jpg" alt="">
+                </div>
+                <p class="year">2019</p>
+                <h2 class="carName" id="rangename">Range Rover</h2>
+                <p class="prix">3400000DA | 4600DA/Day</p>
+                <button onclick="rentEnter(range.src , rangename.innerHTML)" class="rentNow">Rent Now</button>
+            </div>
+            <div  class="card">
+                <div  class="car-img">
+                    <img id="q2" src="q2.jpg" alt="">
+                </div>
+                <p class="year">2019</p>
+                <h2 class="carName" id="q2name">Audi Q2 Edition</h2>
+                <p class="prix">3400000DA | 4600DA/Day</p>
+                <button onclick="rentEnter(q2.src , q2name.innerHTML)"  class="rentNow">Rent Now</button>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="heading">
+            <span>ABOUT US</span>
+            <h3>Best Customer Experience</h3>
+        </div>
+        <div class="about-content">
+            <div class="about-img">
+                <img src="car-about.jpg">
+            </div>
+            <div class="about-text">
+                <span class="about-us">ABOUT US</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, provident dignissimos optio doloremque sequi quis aliquam qui dolorum culpa labore at nulla sint, quisquam dolore officia laborum dicta eligendi eveniet.
+                    <br><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos laborum quis harum.
+                </p>
+                <button class="read-more">Read More</button>
+            </div>
+        </div>
+    </section>
+    <section class="reviews" id="reviews">
+        <div class="heading">
+            <span>REVIEWS</span>
+            <h3>Whats Our Customer Say</h3>
+        </div>
+        <div class="reviews-box">
+            <div class="user-box">
+                <div class="user-img">
+
+                </div>
+                <h4>User Name</h4>
+                <div class="star-icons">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non expedita rerum iusto excepturi, rem error.</p>
+            </div>
+            <div class="user-box">
+                <div class="user-img">
+
+                </div>
+                <h4>User Name</h4>
+                <div class="star-icons">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non expedita rerum iusto excepturi, rem error.</p>
+            </div>
+            <div class="user-box">
+                <div class="user-img">
+
+                </div>
+                <h4>User Name</h4>
+                <div class="star-icons">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non expedita rerum iusto excepturi, rem error.</p>
+            </div>
+        </div>
+
+    </section>
+    <div class="Rent-page hide-rent">
+        <div class="back-icon">
+            <i class="fa-solid fa-circle-left"></i>
+        </div>
+        <div class="car-picturs">
+            <div class="big-img">
+                <img id="big-img" alt="big-img">
+            </div>
+            <div class="small-images">
+                <div class="img one"><img id="one" alt=""></div>
+                <div class="img two"><img id="two" alt=""></div>
+            </div>
+        </div>
+        <div class="rent-content ">
+            <div class="car-info">
+                <div class="name-L">
+                   <h4 id="nameOfcar" >Porsche Macan 2023 </h4>
+                   <p>4 cyl , 2.0 LT</p>
+                </div>
+                <div class="car-icons">
+                    <div class="icon">
+                        <img src="car-door_12951237.png" width="40">
+                        <p>25 MPG</p>
+                    </div>
+                    <div class="icon">
+                        <img src="car-door_12951237.png" width="40">
+                        <p>Gas (Premium) </p>
+                    </div>
+                    <div class="icon">
+                        <img src="car-door_12951237.png" width="40">
+                        <p>4 doors</p>
+                    </div>
+                    <div class="icon">
+                        <img src="seat_3304171.png" width="40">
+                        <p>4 Seats</p>
+                    </div>
+                </div>
+                <div class="details-car">
+                    <div class="power">
+                        <h5>261 hp</h5>
+                        <p> Max. power</p>
+                    </div>
+                    <hr>
+                    <div class="power">
+                        <h5>6.4 s</h5>
+                        <p> 0-100 kmh</p>
+                    </div>
+                    <hr>
+                    <div class="power">
+                        <h5>290 kmh</h5>
+                        <p> Top track speed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="aside-content">
+               <p class="price"><span id="old-price">6800DA </span> 5900DA /day</p>
+               <p id="taxes-fees">$486 excl. taxes & fees</p>
+               <hr>
+                 <div class="trip start">
+                    <p class="trip-se">Trip start</p>
+                    <div class="inputs">
+                        <input class="dateinput" type="date" name="" >
+                        <input type="time" name="" placeholder="Select Time">
+                    </div>
+                 </div>
+                 <div class="trip end">
+                    <p class="trip-se">Trip end</p>
+                    <div class="inputs">
+                        <input class="dateinput" type="date" name="" >
+                        <input type="time" name="" placeholder="Select Time">
+                    </div>
+                 </div>
+                 <div class="pick-return">
+                    <h6>Pickup & return location</h6>
+                    <input list="loc" placeholder="choose Pickup and return location">
+                    <datalist id="loc">
+                        <option value="Tiaret ,EPLF "></option>
+                        <option value="Tiaret ,EPLF "></option>
+                        <option value="Tiaret ,EPLF "></option>
+                        <option value="Tiaret ,EPLF "></option>
+                        <option value="Tiaret ,EPLF "></option>
+                        <option value="Tiaret ,EPLF "></option>
+                    </datalist>
+                 </div>
+                 <div class="buttons">
+                    <button id="continue">Continue</button>
+                    <button class="favori">
+                        <i class="fa-regular fa-heart"></i>
+                        Add to favorites
+                    </button>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="alert alert-hide">
+        <i class="fa-solid fa-check-to-slot"></i>
+        <p>Thank you for dealing with us</p>
+        <button href="#home" id="ok">OK</button>
+    </div>
+    <footer>
+      <div class="sub">
+        <h3>Subscribe To News Letter</h3>
+        <form action="" class="subscribe">
+           <input type="email" name="" id="email" placeholder="Enter Your Email ... ">
+           <a id="submit" onclick="alertcall()">Subscribe</a>
+        </form>
+      </div>
+      <div class="foot">
+        <p>© 2024 ,All Rights Reserved</p>
+        <div class="social-icons">
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+</body>
+</html>
